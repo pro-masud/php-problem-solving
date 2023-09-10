@@ -8,7 +8,13 @@
 <body>
 
     <?php 
+            // empty array 
             $sales = [];
+
+
+            /**
+             * all dandom value
+             * */ 
 
             for($i=0; $i < 12; $i++){
                 $sales[] = rand(10000, 50000); 
@@ -32,16 +38,15 @@
             echo "\n";
             echo "\n";
 
-            echo "This Year Max sales:" . $sales[$maxSale];
+            echo "This " . date("F", mktime(0, 0, 0, $maxSale, 1)) . " Max sales:" . $sales[$maxSale];
             echo "\n";
             echo "\n";
-            echo "This Year low sales:" . $sales[$minSale];
+            echo "This " . date("F", mktime(0, 0, 0, $minSale, 1)) . " low sales:" . $sales[$minSale];
 
             echo "\n";
             echo "\n";
 
-            // $i = 0;
-
+            // 
             rsort($sales);
             foreach( $sales as $month){
                 echo "{$i} This Month Sales: {$month} ". "\n";
