@@ -13,7 +13,7 @@
 
 
             /**
-             * all dandom value
+             * all random value
              * */ 
 
             for($i=0; $i < 12; $i++){
@@ -36,14 +36,12 @@
             $totalArrayValue = array_reduce($sales, 'totalValue');
             echo "Total sales In This Year: " . $totalArrayValue;
             echo "\n";
-            echo "\n";
 
             echo "This " . date("F", mktime(0, 0, 0, $maxSale, 1)) . " Max sales:" . $sales[$maxSale];
             echo "\n";
             echo "\n";
             echo "This " . date("F", mktime(0, 0, 0, $minSale, 1)) . " low sales:" . $sales[$minSale];
 
-            echo "\n";
             echo "\n";
 
             // 
